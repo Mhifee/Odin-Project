@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* .image img{
+    height: 100vh;
+    width: 100%;
+} */
+/* .body{
+    background-image: url(./images/green\ leaf1.jpg);
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    height: 50vh;
+    background-image: url(./images/green\ leaf1.jpg);
+}
+.odin-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 20px 100px;
+    background-color: hsla(0, 0%, 0%, 0.6);
+}
+.odin-header img{
+    width: 100px;
+}
+.odin-header h1{
+    color: white;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsla(220, 13%, 91%, 0.5);
+    font-family: 'Open Sans', sans-serif;
+}
+.headline p{
+    padding: 20px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.form{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(128, 127, 127);
+}
+.form p{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+form{
+    padding: 10px 0;
+}
+label{
+    font: 14px;
+}
+input{
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #E5E7EB;
+}
+#invalid{
+    color: #ff0000;
+    font-size: 14px;
+    display: none;
+}
+input:focus{
+    border: 1px solid #0000ff;
+    outline: none;
+}
+input[type='password']:valid{
+    border: 1px solid #ff0000;
+} 
+input[type='submit']{
+    width: 50%;
+    padding: 13px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 0 8px 3px rgb(128, 127, 127, 0.5);
+    float: center;
+    cursor: pointer;
+}
+input[type='submit']:focus{
+    border: none;
+}
+.create-account-button{
+    padding: 20px;
+}
+.create-account-button p{
+    font-size: 14px;
+    padding: 20px 0;
+}
+.create-account-button a{
+    color: #596D48;
+}
+.create-account-button input{
+    background-color:  #596D48;
+    color: #ffffff;
+}
+
+@media only screen and (min-width:768px){
+    .image{
+        height: 60vh;
+    }
+    .odin-header{
+        margin-top: 80px;
+    }
+    .odin-header img{
+        width: 150px;
+    }
+    .odin-header h1{
+        font-size: 65px;
+    }
+    .headline p{
+        padding: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .form{
+        padding: 30px;
+    }
+    .form p{
+        font-size: 20px;
+    }
+    .flex-1, .flex-2, .flex-3{
+        display: flex;
+        gap: 150px;
+        padding-bottom: 20px;
+    }
+    label{
+        font-size: 15px;
+    }
+    input{
+        width: 140%;
+    }
+    input[type='submit']{
+        width: 40%;
+        padding: 15px;
+        font-size: 16px;
+        float: center;
+    }
+    footer{
+        padding: 30px;
+    }
+    footer p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .container{
+        flex-direction: row;
+    }
+    .image{
+        height: 200vh;
+    }
+    .odin-header{
+        margin-top: 200px;
+        padding: 20px 100px;
+    }
+    .odin-header img{
+        width: 100px;
+    }
+    .headline p{
+        padding: 50px;
+        line-height: 40px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .form{
+        padding: 50px;
+    }
+    .form p{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .flex-1, .flex-2, .flex-3{
+        gap: 50px;
+    }
+    label{
+        font-size: 20px;
+    }
+    input{
+        width: 100%;
+    }
+    input[type='submit']{
+        font-size: 20px;
+    }
+    footer{
+        padding: 50px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:1044px){
+    .odin-header{
+        padding: 20px 120px;
+    }
+    .odin-header img{
+        width: 120px;
+    }
+    .headline p{
+        font-size: 25px;
+    }
+    .flex-1, .flex-2, .flex-3{
+        gap: 150px;
+    }
+    label{
+        font-size: 20px;
+    }
+    input{
+        width: 140%;
+    }
+    input[type='submit']{
+        font-size: 25px;
+        width: 35%;
+    }
+    footer p{
+        font-size: 25px;
+    }
+}

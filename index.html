@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Project</title>
+</head>
+<body>
+    <div class="container">
+        <section class="image">
+            <h1>hello</h1>
+            <div class="odin-header">
+                <img src="./images/odin-lined.png" alt="">
+                <h1>ODIN</h1>
+            </div>
+        </section>
+        <section class="text">
+            <div class="headline">
+                <p>This is not a real time online service. You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    <br>
+                    Sign up <i>now</i> to get started.
+                    <br><br>
+                    You <i>know</i> you want to.
+                </p>
+            </div>
+            <div class="create-account">
+                <div class="form">
+                    <p>Let's do this!</p>
+                    <form>
+                        <div class="flex-1">
+                            <div>
+                                <label for="first-name">
+                                    FIRST NAME    
+                                </label>
+                                <br>
+                                <input type="text" placeholder="input your first name" required>
+                                <br>
+                            </div>
+                            <div>
+                                <label for="last-name">
+                                    LAST NAME
+                                </label>
+                                <br>
+                                <input type="text" placeholder="input your last name" required>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="flex-2">
+                            <div>
+                                <label for="email">
+                                EMAIL
+                                </label>
+                                <br>
+                                <input type="email" placeholder="input your email" required>
+                                <br>
+                            </div>
+                            <div>
+                                <label for="phone-number">
+                                PHONE NUMBER
+                                </label>
+                                <br>
+                                <input type="number" placeholder="input your phone number" required>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="flex-3">
+                            <div>
+                                <label for="password">
+                                    PASSWORD
+                                </label>
+                                <br>
+                                <input type="password" name="password1" id="password1" placeholder="choose your password" required>
+                                <p id="invalid">* Passwords do not match</p>
+                                <br>
+                            </div>
+                            <div>
+                                <label for="confirm-password">
+                                    CONFIRM PASSWORD
+                                </label>
+                                <br>
+                                <input type="password" name="password2" id="password2" placeholder="enter your password again" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-account-button">
+                        <input type="submit" name="submit" value="Create Account" onclick="matchPassword()"> 
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
